@@ -1,101 +1,27 @@
-* {
-    box-sizing: border-box;
-}
+/* --------------------------
+  Base Styles
+--------------------------- */
 
-body {
-    margin: 0 auto;
-    max-width: 1024px;
-}
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
 
-a {
-    text-decoration: none;
-}
 
-nav {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    letter-spacing: .05em;
-    background-color: rgb(238, 238, 238);
-    padding: 25px;
-}
 
-h1, .top-nav {
-    text-align: center;
-}
+/* --------------------------
+  Nav
+--------------------------- */
 
-.top-nav, top-nav li {
-    width: 100%;
-}
 
-h1 a, .top-nav a {
-    color: rgb(51, 51, 51);
-}
 
-.top-nav {
-    margin-top: 30px;
-}
 
-.top-nav li {
-    padding: 10px 0;
-    margin: 5px auto;
-    background-color: #fff;
-}
 
-.top-nav a {
-    text-transform: uppercase;
-}
 
-@media (min-width: 768px) {
-    .top-nav {
-      margin-top: 0;
-    }
-    
-    .top-nav li {
-      display: inline-block;
-      width: auto;
-      margin-right: 15px;
-      background-color: transparent;
-    }
-    
-    .top-nav li:last-child {
-      margin-right: 0;
-    }
-  ​
-    .top-nav a {
-      color: #fff;
-    }
-  }
+/* --------------------------
+  Media Queries
+--------------------------- */
 
-@media (min-width: 1024px) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
 
-@media (min-width: 1024px) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
 
-    .top-nav,
-    .top-nav li {
-        width: initial;
-        margin-bottom: 0;
-    }
 
-    .profile img {
-        display: inline;
-        float: right;
-        order: 2;
-        align-self: flex-start;
-    }
+
+
+
