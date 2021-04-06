@@ -2,26 +2,171 @@
   Base Styles
 --------------------------- */
 
+body {
+    font-family: "Lato", Arial, Verdana;
+}
 
+.profile-image {
+    float: right;
+}
 
+.about {
+    padding-top: 15px;
+}
 
 
 /* --------------------------
   Nav
 --------------------------- */
 
+* {
+    box-sizing: border-box;
+  }
 
+  body {
+      margin: 0 auto;
+      max-width: 1024px;
+  }
 
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
+  a {
+    text-decoration: none;
+  }
 
+  .nav {
+    font-family: "Lato", Arial, Verdana;
+    font-weight: 400;
+    letter-spacing: .05em;
+    background-color: #ffffff;
+    padding: 25px;
+  }
 
+  h1, .nav {
+    text-align: center;
+  }
+  ​
+  .nav, .nav li {
+    width: 100%;
+  }
+  ​
+  h1 a, .nav a {
+    color: #000;
+  }
+
+  .nav {
+    margin-top: 30px;
+  }
+  ​
+  .nav li {
+    padding: 10px 0;
+    margin: 5px auto;
+    background-color: rgb(255, 255, 255);
+  }
+  ​
+  .nav a {
+    text-transform: uppercase;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    background-color: #ffffff;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    background-color: #ffffff;
+  }
+
+  .full {
+    display: none;
+  }
+  
 /* --------------------------
   Media Queries
 --------------------------- */
 
+@media (min-width: 768px) {
+    .nav {
+      margin-top: 0;
+    }
+    
+    .nav li {
+      display: inline-block;
+      width: auto;
+      margin-right: 15px;
+      background-color: transparent;
+    }
+    
+    .nav li:last-child {
+      margin-right: 0;
+    }
+  ​
+    .nav a {
+      color: #fff;
+    }
+  }
 
+  @media (min-width: 1024px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 
+  @media (min-width: 1024px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  ​
+    .nav, 
+    .nav li {
+      width: initial;
+      margin-bottom: 0;
+    }
+  }
 
-
-
+@media (min-width: 768px) {
+    .top {
+      display: none;
+    }
+    .full {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
 
