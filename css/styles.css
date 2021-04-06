@@ -48,28 +48,6 @@ body {
   h1, .nav {
     text-align: center;
   }
-  ​
-  .nav, .nav li {
-    width: 100%;
-  }
-  ​
-  h1 a, .nav a {
-    color: #000;
-  }
-
-  .nav {
-    margin-top: 30px;
-  }
-  ​
-  .nav li {
-    padding: 10px 0;
-    margin: 5px auto;
-    background-color: rgb(255, 255, 255);
-  }
-  ​
-  .nav a {
-    text-transform: uppercase;
-  }
 
   * {
     margin: 0;
@@ -118,10 +96,14 @@ body {
 --------------------------- */
 
 @media (min-width: 768px) {
-    .nav {
-      margin-top: 0;
+    .top {
+      display: none;
     }
-    
+    .full {
+      display: inline-block;
+      margin-left: 20px;
+    }
+}   
     .nav li {
       display: inline-block;
       width: auto;
@@ -132,11 +114,6 @@ body {
     .nav li:last-child {
       margin-right: 0;
     }
-  ​
-    .nav a {
-      color: #fff;
-    }
-  }
 
   @media (min-width: 1024px) {
     nav {
@@ -145,28 +122,3 @@ body {
       align-items: center;
     }
   }
-
-  @media (min-width: 1024px) {
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  ​
-    .nav, 
-    .nav li {
-      width: initial;
-      margin-bottom: 0;
-    }
-  }
-
-@media (min-width: 768px) {
-    .top {
-      display: none;
-    }
-    .full {
-      display: inline-block;
-      margin-left: 20px;
-    }
-  }
-
