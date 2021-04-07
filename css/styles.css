@@ -168,6 +168,7 @@ body {
 
   @media (min-width: 320px) {
     .nav li{
-          padding-bottom: 10%;
+          padding-top: 2%;
+          padding-bottom: 4%;
       }
   }
