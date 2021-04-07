@@ -14,7 +14,6 @@ body {
     padding-top: 15px;
 }
 
-
 /* --------------------------
   Nav
 --------------------------- */
@@ -44,6 +43,16 @@ body {
     background-color: #ffffff;
     padding: 25px;
   }
+
+  .nav :hover {
+      color: rgb(218, 0, 0);
+      font-weight: bold;
+  }
+
+  .footer :hover {
+    color: rgb(218, 0, 0);
+    font-weight: bold;
+}
 
   h1, .nav {
     text-align: center;
@@ -85,12 +94,34 @@ body {
     padding: 0 20px;
     height: 100px;
     background-color: #ffffff;
+    padding-bottom: 3%;
   }
 
   .full {
     display: none;
   }
-  
+  img {
+    max-width: 100%;
+    padding: 3%;
+  }
+
+  p, h4 {
+      padding: 3%;
+      text-align: center;
+  }
+
+  h2 {
+      padding-left: 1%;
+  }
+
+  .about {
+      padding-top: 4%;
+  }
+
+  #contact p {
+      padding: 1%;
+  }
+
 /* --------------------------
   Media Queries
 --------------------------- */
@@ -103,17 +134,26 @@ body {
       display: inline-block;
       margin-left: 20px;
     }
-}   
     .nav li {
       display: inline-block;
       width: auto;
       margin-right: 15px;
       background-color: transparent;
     }
-    
     .nav li:last-child {
       margin-right: 0;
     }
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #portfolio h2 {
+        flex-basis: 100%;
+      }
+      #portfolio .projects {
+        flex-basis: 50%;
+      }
+} 
 
   @media (min-width: 1024px) {
     nav {
@@ -121,4 +161,13 @@ body {
       justify-content: space-between;
       align-items: center;
     }
+    #portfolio .projects {
+        flex-basis: 33.333%;
+      }
+  }
+
+  @media (min-width: 320px) {
+    .nav li{
+          padding-bottom: 10%;
+      }
   }
